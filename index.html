@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Libertas - A fast, reliable, and fully decentralized proof-of-work cryptocurrency designed with simplicity, security, and accessibility in mind.">
+    <meta name="keywords" content="Libertas, cryptocurrency, blockchain, proof-of-work, mining, decentralized, BLAKE3">
+    <title>Libertas | Decentralized Proof-of-Work Cryptocurrency</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">◇</span>
+                <span class="logo-text">Libertas</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#components">Components</a></li>
+                <li><a href="#philosophy">Philosophy</a></li>
+                <li><a href="#vision">Vision</a></li>
+                <li><a href="#donate">Donate</a></li>
+            </ul>
+            <div class="nav-social">
+                <a href="https://github.com/libertas-coin" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
+                    class="social-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                    </svg>
+                </a>
+                <a href="https://x.com/coin_libertas" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X"
+                    class="social-link">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                    </svg>
+                </a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="hero-badge">Proof-of-Work • Decentralized • Open Source</div>
+            <h1 class="hero-title">
+                <span class="gradient-text">Libertas</span>
+            </h1>
+            <p class="hero-subtitle">
+                A fast, reliable, and fully decentralized proof-of-work cryptocurrency designed with simplicity,
+                security, and accessibility in mind.
+            </p>
+            <div class="hero-features">
+                <div class="feature-pill">
+                    <span class="pill-icon">⚡</span>
+                    <span>Fast</span>
+                </div>
+                <div class="feature-pill">
+                    <span class="pill-icon">🔒</span>
+                    <span>Secure</span>
+                </div>
+                <div class="feature-pill">
+                    <span class="pill-icon">🌐</span>
+                    <span>Decentralized</span>
+                </div>
+            </div>
+            <div class="hero-cta">
+                <a href="#components" class="btn btn-primary">Explore Features</a>
+                <a href="#donate" class="btn btn-secondary">Support Project</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="floating-card card-1">
+                <div class="card-icon">🔗</div>
+                <div class="card-label">Blockchain</div>
+            </div>
+            <div class="floating-card card-2">
+                <div class="card-icon">⛏️</div>
+                <div class="card-label">Mining</div>
+            </div>
+            <div class="floating-card card-3">
+                <div class="card-icon">👛</div>
+                <div class="card-label">Wallets</div>
+            </div>
+        </div>
+    </header>
+
+    <section id="overview" class="section overview">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About</span>
+                <h2 class="section-title">Built for Everyone</h2>
+                <p class="section-desc">
+                    Libertas aims to be a cryptocurrency that works for miners, developers, and users alike.
+                    By prioritizing efficiency and modular design, Libertas achieves compatibility across platforms
+                    while maintaining a fully decentralized network.
+                </p>
+            </div>
+
+            <div class="principles-grid">
+                <div class="principle-card">
+                    <div class="principle-icon">🔓</div>
+                    <h3>Permissionless</h3>
+                    <p>Not proof-of-stake, not centralized. True decentralization.</p>
+                </div>
+                <div class="principle-card">
+                    <div class="principle-icon">✨</div>
+                    <h3>Minimalism</h3>
+                    <p>No unnecessary features that slow down the chain or compromise security.</p>
+                </div>
+                <div class="principle-card">
+                    <div class="principle-icon">🚀</div>
+                    <h3>Accessibility</h3>
+                    <p>Anyone can participate in mining and node operation. Supports both GPUs and CPUs.</p>
+                </div>
+                <div class="principle-card">
+                    <div class="principle-icon">⚡</div>
+                    <h3>Efficiency</h3>
+                    <p>GPU mining accelerates performance without breaking chain consistency.</p>
+                </div>
+                <div class="principle-card">
+                    <div class="principle-icon">🎯</div>
+                    <h3>Reliability</h3>
+                    <p>Deterministic cryptography and robust P2P networking ensure predictable behavior.</p>
+                </div>
+                <div class="principle-card">
+                    <div class="principle-icon">🛠️</div>
+                    <h3>Developer-Friendly</h3>
+                    <p>Modular, open-source libraries allow experimentation and integration.</p>
+                </div>
+            </div>
+
+            <div class="no-bloat-banner">
+                <div class="banner-content">
+                    <h3>Intentional Minimalism</h3>
+                    <p>Libertas does <strong>NOT</strong> include smart contracts, NFTs, token systems, or experimental
+                        consensus mechanisms. This ensures a stable foundation for users and developers alike.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="components" class="section components">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Core</span>
+                <h2 class="section-title">Core Components</h2>
+                <p class="section-desc">
+                    The essential building blocks that power the Libertas ecosystem.
+                </p>
+            </div>
+
+            <div class="component-block">
+                <div class="component-content">
+                    <div class="component-number">01</div>
+                    <h3 class="component-title">Mining</h3>
+                    <p class="component-desc">
+                        Libertas implements BLAKE3 proof-of-work mining with hybrid CPU/GPU support.
+                    </p>
+                    <ul class="component-features">
+                        <li><strong>CPU Mining:</strong> Out-of-the-box functionality allows anyone to mine on standard
+                            hardware efficiently</li>
+                        <li><strong>GPU Mining:</strong> OpenCL acceleration allows higher speed for miners</li>
+                        <li>Mining rewards are distributed fairly and deterministically</li>
+                    </ul>
+                    <p class="component-note">The hybrid design ensures wide accessibility while still rewarding more
+                        capable hardware without compromising fairness.</p>
+                </div>
+            </div>
+
+            <div class="component-block reverse">
+                <div class="component-content">
+                    <div class="component-number">02</div>
+                    <h3 class="component-title">Wallets</h3>
+                    <p class="component-desc">
+                        Libertas provides cross-platform wallets for seamless access anywhere.
+                    </p>
+                    <ul class="component-features">
+                        <li><strong>Desktop:</strong> Qt GUI, supports both Windows and Linux</li>
+                        <li><strong>Mobile:</strong> Android app built with C++ core (NDK) and Kotlin GUI wrapper</li>
+                        <li><strong>CLI:</strong> Full-featured command-line wallet</li>
+                    </ul>
+                    <div class="wallet-features">
+                        <div class="wallet-feature">
+                            <span class="wf-icon">🔑</span>
+                            <span>12-word mnemonic recovery compatible across all platforms</span>
+                        </div>
+                        <div class="wallet-feature">
+                            <span class="wf-icon">🔄</span>
+                            <span>Deterministic cryptography ensures identical addresses across devices</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="component-visual">
+                    <div class="wallet-gallery">
+                        <div class="wallet-screenshot desktop">
+                            <img src="./desktop.png" alt="Desktop Wallet">
+                            <span class="screenshot-label">Desktop Wallet</span>
+                        </div>
+                        <div class="wallet-screenshot mobile">
+                            <img src="./mobile.jpg" alt="Mobile Wallet">
+                            <span class="screenshot-label">Mobile Wallet</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="component-block">
+                <div class="component-content">
+                    <div class="component-number">03</div>
+                    <h3 class="component-title">Cryptography</h3>
+                    <p class="component-desc">
+                        Libertas relies on proven, modern cryptography for maximum security.
+                    </p>
+                    <ul class="component-features">
+                        <li><strong>BLAKE3:</strong> Fast, secure hash function for block hashing, transaction
+                            integrity, and Merkle tree construction</li>
+                        <li><strong>Libsodium:</strong> For key generation and secure memory</li>
+                        <li>Deterministic key derivation ensures cross-platform compatibility and reliability</li>
+                    </ul>
+                    <p class="component-note">This cryptographic foundation is designed to minimize risk and maximize
+                        predictability for both developers and users.</p>
+                </div>
+                <div class="component-visual">
+                    <div class="crypto-visual">
+                        <div class="crypto-item">
+                            <span class="crypto-name">BLAKE3</span>
+                            <span class="crypto-purpose">Hashing</span>
+                        </div>
+                        <div class="crypto-item">
+                            <span class="crypto-name">Libsodium</span>
+                            <span class="crypto-purpose">Keys & Memory</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="component-block reverse">
+                <div class="component-content">
+                    <div class="component-number">04</div>
+                    <h3 class="component-title">Peer-to-Peer Network</h3>
+                    <p class="component-desc">
+                        Libertas operates on a fully decentralized P2P network.
+                    </p>
+                    <ul class="component-features">
+                        <li><strong>Automatic node discovery</strong> ensures nodes find peers without central servers
+                        </li>
+                        <li><strong>Chain synchronization from genesis</strong> allows new nodes to catch up securely
+                        </li>
+                        <li><strong>Transaction and block validation</strong> enforces network-wide consensus</li>
+                        <li>Network layer designed for robustness, including handling node churn and forks</li>
+                    </ul>
+                </div>
+                <div class="component-visual">
+                    <div class="network-visual">
+                        <div class="node node-1"></div>
+                        <div class="node node-2"></div>
+                        <div class="node node-3"></div>
+                        <div class="node node-4"></div>
+                        <div class="node node-5"></div>
+                        <div class="node node-center"></div>
+                        <svg class="network-lines">
+                            <line x1="50%" y1="50%" x2="20%" y2="20%"></line>
+                            <line x1="50%" y1="50%" x2="80%" y2="20%"></line>
+                            <line x1="50%" y1="50%" x2="20%" y2="80%"></line>
+                            <line x1="50%" y1="50%" x2="80%" y2="80%"></line>
+                            <line x1="50%" y1="50%" x2="50%" y2="10%"></line>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="philosophy" class="section philosophy">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Philosophy</span>
+                <h2 class="section-title">Ecosystem Philosophy</h2>
+                <p class="section-desc">
+                    Libertas emphasizes clarity and trust over hype.
+                </p>
+            </div>
+
+            <div class="philosophy-grid">
+                <div class="philosophy-item">
+                    <div class="phi-icon">🎯</div>
+                    <h3>Minimalism</h3>
+                    <p>No fads like smart contracts, token schemes, or experimental consensus features.</p>
+                </div>
+                <div class="philosophy-item">
+                    <div class="phi-icon">📐</div>
+                    <h3>Predictability</h3>
+                    <p>Deterministic wallets, hashing, and block layout prevent inconsistencies across platforms.</p>
+                </div>
+                <div class="philosophy-item">
+                    <div class="phi-icon">🌍</div>
+                    <h3>Accessibility</h3>
+                    <p>Hybrid mining and cross-platform nodes allow anyone to participate.</p>
+                </div>
+                <div class="philosophy-item">
+                    <div class="phi-icon">👨‍💻</div>
+                    <h3>Developer-Focused</h3>
+                    <p>Modular design enables experimentation and integration into other projects.</p>
+                </div>
+            </div>
+
+            <div class="audience-section">
+                <h3 class="audience-title">Target Audience</h3>
+                <div class="audience-grid">
+                    <div class="audience-card">
+                        <div class="aud-icon">⛏️</div>
+                        <h4>Small Scale Miners</h4>
+                        <p>CPU and GPU mining accessible from day one without needing ASICs.</p>
+                    </div>
+                    <div class="audience-card">
+                        <div class="aud-icon">🔬</div>
+                        <h4>Developers & Researchers</h4>
+                        <p>Clean, modular code for experimentation and learning.</p>
+                    </div>
+                    <div class="audience-card">
+                        <div class="aud-icon">🛡️</div>
+                        <h4>Stability Seekers</h4>
+                        <p>Predictable wallets and cross-platform compatibility.</p>
+                    </div>
+                    <div class="audience-card">
+                        <div class="aud-icon">🤝</div>
+                        <h4>Community Participants</h4>
+                        <p>Fully decentralized P2P network without central servers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="technical" class="section technical">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Technical</span>
+                <h2 class="section-title">Technical Design Highlights</h2>
+            </div>
+
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <div class="tech-icon">📦</div>
+                    <h3>Modular Architecture</h3>
+                    <p>Mining, wallet, and node functionalities are separated into reusable libraries.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">🖥️</div>
+                    <h3>Cross-Platform Support</h3>
+                    <p>CLI core and Qt wallets are supported in both Windows and Linux. Android has its own wallet with
+                        Kotlin and C++.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">🔐</div>
+                    <h3>Secure Wallets</h3>
+                    <p>Wallets rely on libsodium for KDFs, signatures, and memory safety.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">🌐</div>
+                    <h3>Robust Networking</h3>
+                    <p>P2P protocol includes discovery, validation, and resynchronization mechanisms.</p>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section id="vision" class="section vision">
+        <div class="container">
+            <div class="vision-content">
+                <span class="section-tag">Vision</span>
+                <h2 class="vision-title">A Reliable Foundation</h2>
+                <p class="vision-text">
+                    Libertas is designed to be a reliable foundation rather than a flashy platform.
+                    It prioritizes predictable behavior, accessibility, and developer usability,
+                    forming a strong base for miners, developers, and anyone seeking a decentralized
+                    digital currency that "just works."
+                </p>
+                <p class="vision-text">
+                    Future growth can focus on community adoption, developer experimentation,
+                    and ecosystem stability, rather than chasing trends that complicate the protocol
+                    or compromise reliability.
+                </p>
+                <div class="vision-badge">
+                    <span class="license-label">License</span>
+                    <span class="license-value">MIT License</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="donate" class="section donate">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Support</span>
+                <h2 class="section-title">Donations</h2>
+                <p class="section-desc">
+                    Support the development of Libertas with a donation.
+                </p>
+            </div>
+
+            <div class="donation-grid">
+                <div class="donation-card" data-crypto="btc">
+                    <div class="donation-header">
+                        <span class="donation-icon">₿</span>
+                        <span class="donation-name">Bitcoin (BTC)</span>
+                    </div>
+                    <div class="donation-address">
+                        <code>bc1qxawtsayllp5cqszn63w47qmpnhh42pu35cd5dl</code>
+                        <button class="copy-btn" onclick="copyAddress(this)" aria-label="Copy address">
+                            <span class="copy-icon">📋</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="donation-card" data-crypto="eth">
+                    <div class="donation-header">
+                        <span class="donation-icon">Ξ</span>
+                        <span class="donation-name">Ethereum (ETH)</span>
+                    </div>
+                    <div class="donation-address">
+                        <code>0xA3b26534a678eacB61b6277f9EB6A0EB5effEA3a</code>
+                        <button class="copy-btn" onclick="copyAddress(this)" aria-label="Copy address">
+                            <span class="copy-icon">📋</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="donation-card" data-crypto="usdt">
+                    <div class="donation-header">
+                        <span class="donation-icon">₮</span>
+                        <span class="donation-name">USDT (ERC-20)</span>
+                    </div>
+                    <div class="donation-address">
+                        <code>0xA3b26534a678eacB61b6277f9EB6A0EB5effEA3a</code>
+                        <button class="copy-btn" onclick="copyAddress(this)" aria-label="Copy address">
+                            <span class="copy-icon">📋</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="donation-card" data-crypto="xmr">
+                    <div class="donation-header">
+                        <span class="donation-icon">ɱ</span>
+                        <span class="donation-name">Monero (XMR)</span>
+                    </div>
+                    <div class="donation-address">
+                        <code>8Bz7dQWhmmtRCMqi5gXszx2LDS7gJtxg9XiCpANVnJxZea3iaJzH2w22aBVGwgR1PW5a2PDB1V8JAhcVG7NKedM4P4HPT4V</code>
+                        <button class="copy-btn" onclick="copyAddress(this)" aria-label="Copy address">
+                            <span class="copy-icon">📋</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="donation-card" data-crypto="sol">
+                    <div class="donation-header">
+                        <span class="donation-icon">◎</span>
+                        <span class="donation-name">Solana (SOL)</span>
+                    </div>
+                    <div class="donation-address">
+                        <code>EFNUD7SCSagUxNkJdnN8K7dNoKyqv7zbioDusinQTNZP</code>
+                        <button class="copy-btn" onclick="copyAddress(this)" aria-label="Copy address">
+                            <span class="copy-icon">📋</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="donation-card" data-crypto="xrp">
+                    <div class="donation-header">
+                        <span class="donation-icon">✕</span>
+                        <span class="donation-name">Ripple (XRP)</span>
+                    </div>
+                    <div class="donation-address">
+                        <code>rsuHRQh6Gn246oi2ynDHJ15i9TJSaYp8NQ</code>
+                        <button class="copy-btn" onclick="copyAddress(this)" aria-label="Copy address">
+                            <span class="copy-icon">📋</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="donation-card" data-crypto="ltc">
+                    <div class="donation-header">
+                        <span class="donation-icon">Ł</span>
+                        <span class="donation-name">Litecoin (LTC)</span>
+                    </div>
+                    <div class="donation-address">
+                        <code>ltc1qlahavrs3rvlpn2ydxle9x6v4fthlq5whzyj7fu</code>
+                        <button class="copy-btn" onclick="copyAddress(this)" aria-label="Copy address">
+                            <span class="copy-icon">📋</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="donation-card" data-crypto="doge">
+                    <div class="donation-header">
+                        <span class="donation-icon">Ð</span>
+                        <span class="donation-name">Dogecoin (DOGE)</span>
+                    </div>
+                    <div class="donation-address">
+                        <code>DKEUsAJ9dchxPAFa7Stf3U9tWzEYzzYmgC</code>
+                        <button class="copy-btn" onclick="copyAddress(this)" aria-label="Copy address">
+                            <span class="copy-icon">📋</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">◇</span>
+                    <span class="logo-text">Libertas</span>
+                </div>
+                <p class="footer-tagline">Fast. Reliable. Decentralized.</p>
+                <div class="footer-social">
+                    <a href="https://github.com/libertas-coin" target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub" class="social-link">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                        </svg>
+                    </a>
+                    <a href="https://x.com/coin_libertas" target="_blank" rel="noopener noreferrer"
+                        aria-label="Twitter/X" class="social-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                        </svg>
+                    </a>
+                </div>
+                <p class="footer-license">Released under MIT License</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="toast" id="toast">
+        <span class="toast-icon">✓</span>
+        <span class="toast-message">Address copied to clipboard!</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
