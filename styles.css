@@ -189,7 +189,7 @@ a {
     transition: var(--transition)
 }
 
-.nav-social {
+.nav-external {
     display: flex;
     gap: 12px;
     align-items: center;
@@ -198,7 +198,7 @@ a {
     border-left: 1px solid var(--border)
 }
 
-.social-link {
+.icon-link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -208,12 +208,12 @@ a {
     border-radius: 8px
 }
 
-.social-link:hover {
+.icon-link:hover {
     color: var(--accent);
     background: rgba(34, 211, 238, 0.1)
 }
 
-.footer-social {
+.footer-external {
     display: flex;
     gap: 16px;
     justify-content: center;
@@ -1164,7 +1164,7 @@ a {
         display: flex
     }
 
-    .nav-social {
+    .nav-external {
         margin-left: auto;
         padding-left: 0;
         border-left: none
